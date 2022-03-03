@@ -1,0 +1,133 @@
+''' 
+dois lados de um triângulo tem que sempre ser maior que o terceiro 
+- dois lados iguais = isósceles
+- três lados diferentes = escaleno
+- todos lados iguais = equilátero
+'''
+a = float(input('Medida A: '))
+b = float(input('Medida B: '))
+c = float(input('Medida c: '))
+
+if (a + b < c) or (a + c < b) or (b + c < a):
+        print('Nao pode ser triÂngulo')
+elif (a == b) and (a == c) :
+        print('Equilátero')
+elif (a==b) or (a==c) or (b==c):
+        print('Isósceles')
+else:
+        print('Escaleno')
+
+
+
+
+
+''' 
+vai em Edit, Replace ou CTRL + H para traduzir o código
+'''
+ano = int(input('Ano:'))
+
+if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
+    print('Bissexto')
+
+else:
+    print('Não é bissexto')
+
+
+
+
+
+p = float(input('Peso: '))
+if p>50:
+    excesso = p - 50
+    multa = excesso * 4
+    print(f'Multado R${multa:.2f}')
+else:
+    excesso = multa = 0
+    print('Sem problemas')
+    
+
+
+
+
+a = int(input('a: '))
+b = int(input('b: '))
+c = int(input('c: '))
+
+if a > b and a>c:
+    print('A é maior: ')
+
+elif b > a and b>c:
+    print('B é maior: ')
+
+elif c > a and c>b:
+    print('C é maior: ')
+
+
+
+
+
+
+a = int(input('a: '))
+b = int(input('b: '))
+c = int(input('c: '))
+
+if a > b and a > c:
+    print('A é maior: ')
+
+elif b > a and b > c:
+    print('B é maior: ')
+
+elif c > a and c > b:
+    print('C é maior: ')
+
+if a < b and a < c:
+    print('A é menor: ')
+
+elif b < a and b < c:
+    print('B é menor: ')
+
+elif c < a and c < b:
+    print('C é menor: ')
+    
+
+
+
+
+valor_hora = float(input('Valor da Hora R$: '))
+numero_horas = int(input('Número de horas: '))
+
+salario_bruto = numero_horas * valor_hora
+print(f'Salário Bruto R$: {salario_bruto:.2f}')
+
+ir = salario_bruto * 0.11
+print(f'IR 11|%: {ir:.2f}')
+
+inss = salario_bruto * 0.08
+print(f'INSS 8%: {inss:.2f}')
+
+sindicato = salario_bruto * 0.05
+print(f'Sindicato 5%: {sindicato:.2f}')
+
+salario_liquido = salario_bruto - (ir + inss + sindicato)
+print(f'Salário Liquído R$: {salario_liquido:.2f}')
+
+
+
+
+
+
+metros = float(input('Tamanho em m²: '))
+
+litros = metros/3
+
+if metros % 54 == 0:
+    latas = metros / 54
+else:
+    latas = int(metros/54) + 1
+
+preco = latas * 80
+
+print(f'Quantidade de latas: {latas:.2f}')
+
+print(f'Preço RS: {preco:.2f}')
+

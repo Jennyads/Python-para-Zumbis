@@ -1,0 +1,78 @@
+Exercício 01
+n1 = int(input('N1: '))
+n2 = int(input('N2: '))
+print (n1 + n2)
+
+Exercício 02
+m = int(input('Metros: '))
+print(f'Milímetros: {m*1000}')
+
+Exercício 03
+d = int(input('Dias: '))
+h = int(input('Horas: '))
+m = int(input('Minutos: '))
+s = int(input('Segundos: '))
+
+total = d*24*60*60 + h*60*60 + m*60 + s
+print(total)
+
+Exercício 04
+s= float(input('Salário: '))
+p= float(input('Aumento%: '))
+aumento = s*p/100
+novo = s + aumento
+print(f'Aumento: R$ {aumento:.2f}')
+print(f'Novo salário: R$ {novo:.2f}')
+
+Exercício 05
+m = float(input('Preço: '))
+p = float(input('Desconto%: '))
+desconto = m*p/100
+novo = m - desconto
+print(f'Desconto: R${desconto:.2f}')
+print(f'Preço a pagar: {novo:.2f}')
+
+Exercício 06
+d = float(input('Distância km: '))
+v= float(input('Vm km/h: '))
+t = d/v
+print (f'Tempo:{t:.1f}')
+
+Exercício 07
+c = float(input('Celsius: '))
+f = 9*c/5 + 32
+print(f'{f:.2f} Fahrenheit')
+
+Exercício 08
+f = float(input('Fahrenheit: '))
+c = (f-32)*5/9
+print(f'{c:.2f} Celsius')
+
+Exercício 09
+km = float(input('Km percorridos: '))
+dias = int(input('Dias: '))
+preço = 60*dias + 0.15*km
+print(f'R${preço:.2f}')
+
+Exercício 10
+'''
+1 dia = 1440 minutos = 144 cigarros
+'''
+cigarros = int(input('Cigarros: '))
+anos = int(input('Anos: '))
+total = anos*365*cigarros
+dias = total/144
+print(f'Dias perdidos {dias:.1f} dias')
+
+ou 
+anos = int(input('Anos: '))
+cigarros = int(input('Cigarros: '))
+total = anos * 365 * cigarros
+vida_perdida = total / 144
+print (f'Você perdeu {vida_perdida:.2f} dias')
+
+Exercício 11
+print (len(str(2**1000000)))
+
+''' len calcula a quantidade, ele faz a conta
+eu usei str pq ele já deu um número, se eu quisesse um número qualquer utilizaria input'''
